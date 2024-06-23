@@ -1,25 +1,42 @@
 <!doctype html>
 <html>
 
-    <head>
-        <script src="http://localhost:35729/livereload.js" rel="preload" async></script>
-        <link href="styles.css" rel="stylesheet" />
-        <title>WELCOME</title>
-        <style>
-            a {text-align: center;}
-            h1 {text-align: center;}
-            h2 {text-align: center;}
-        </style>
-    </head>
+<head>
+    <script src="http://localhost:35729/livereload.js" rel="preload" async></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link href="styles.css" rel="stylesheet" />
+    <title>hello</title>
+    <style>
+        a {text-align: center;}
+        a.center {
+        display: block;
+        font-size: 30px;
+        }
+        label {
+        position:fixed;
+        right:10px;
+        top:5px;
+        font-size: 20px;
+        }
+        h1 {text-align: center;}
 
-    <body>
-        <h1>welcome {{username}}</h1>
-        <h2>wie möchtest du aussehen?</h2>
-        <img src="Gesicht_base.png" width="25%">
-        <img src="Shirt_grün.png" width="25%">
-        <img src="Füsse.png" width="25%">
-        <br><br>
-        <a href="/quiz" class="center">BESTÄTIGEN</a>
-    </body>
+    </style>
+</head>
+
+<body>
+<h1>hello {{username}}</h1>
+<h1>wie möchtest du aussehen?</h1>
+<img src="Gesicht_base.png" width="25%">
+<img src="Shirt_grün.png" width="25%">
+<img src="Füsse.png" width="25%">
+<br><br>
+<a href="/quiz" class="center">
+    <button>bestätigen</button>
+</a>
+
+<a href="/signup" class="center">
+    <label>log out</label>
+</a>
+</body>
 
 </html>

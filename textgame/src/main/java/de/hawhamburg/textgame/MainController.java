@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class MainController {
 
+    @GetMapping("/start")
+    public String startPage() {
+        return "start";
+    }
+
     @GetMapping("/signup")
-    public String singUp() {
+    public String signUp() {
         return "signup";
     }
 
@@ -23,6 +28,11 @@ public class MainController {
     @GetMapping("/quiz")
     public String startGame() {
         return "quiz";
+    }
+
+    @GetMapping("/results")
+    public String resultScreen() {
+        return "results";
     }
 
 }
