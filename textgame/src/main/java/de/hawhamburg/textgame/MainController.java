@@ -19,11 +19,25 @@ public class MainController {
         return "signup";
     }
 
-    @PostMapping("/create")
+    @PostMapping("/create1")
     public String characterCreation(Model model, @RequestParam("username") String username) {
         model.addAttribute("username", username);
         return "character";
     }
+
+    @GetMapping("/create1")
+    public String characterRecreation() {
+        return "character";
+    }
+
+    @GetMapping("/create2")
+    public String characterBody() { return "body"; }
+
+    @GetMapping("/create3")
+    public String characterBottom() { return "bottom"; }
+
+    @GetMapping("/profile")
+    public String userProfile() { return "profile"; }
 
     @GetMapping("/quiz")
     public String startGame() {

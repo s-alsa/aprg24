@@ -4,39 +4,34 @@
 <head>
     <script src="http://localhost:35729/livereload.js" rel="preload" async></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
-    <link href="styles.css" rel="stylesheet" />
-    <title>hello</title>
     <style>
-        a {text-align: center;}
-        a.center {
-        display: block;
-        font-size: 30px;
-        }
-        label {
-        position:fixed;
-        right:10px;
-        top:5px;
-        font-size: 20px;
-        }
-        h1 {text-align: center;}
-
+        * { font-family: VT323; }
+        body { background: honeydew; }
+        h2 {text-align: center;}
     </style>
 </head>
 
 <body>
-<h1>hello {{username}}</h1>
-<h1>wie möchtest du aussehen?</h1>
-<img src="Gesicht_base.png" width="25%">
-<img src="Shirt_grün.png" width="25%">
-<img src="Füsse.png" width="25%">
+
+<h2>
+    Wie möchtest du aussehen?
+</h2>
+
+<input type="checkbox" value="001">
+<img src="Gesicht_base.png" width="30%">
+<img src="Gesicht_lachen.png" width="30%">
+<input type="checkbox" value="002">
+<br>
+<input type="checkbox" value="003">
+<img src="Gesicht_herz.png" width="30%">
+<img src="Gesicht_traurig.png" width="30%">
+<input type="checkbox" value="004">
 <br><br>
-<a href="/quiz" class="center">
-    <button>bestätigen</button>
+
+<a href="/create2" class="center">
+    <button>next</button>
 </a>
 
-<a href="/signup" class="center">
-    <label>log out</label>
-</a>
 </body>
 
 </html>
